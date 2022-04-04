@@ -9,9 +9,6 @@ import java.util.Optional;
 @Repository
 public interface HeroRepository extends MongoRepository<Hero, String> {
 
-    Optional<Hero> findById(String id);
-
-
     Optional<List<Hero>> findByIdIn(List<String> id);
 
 }
